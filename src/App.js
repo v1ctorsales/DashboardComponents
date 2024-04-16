@@ -1,14 +1,15 @@
-import './styles/App.css';
-import SmallCardHolder from './components/SmallCardHolder';
+
 import Container from 'react-bootstrap/Container';
-import cardData from './data/cardData';
+import SideBar from './components/structure/SideBar';
+
 function App() {
 
     return (
         <div className="App">
             <Container>
-                <SmallCardHolder cardData={cardData} bsLgDivision={4} bsSmDivision={6} />
+
             </Container>
+            <SideBar></SideBar>
         </div>
     );
 }

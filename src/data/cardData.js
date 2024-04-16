@@ -10,7 +10,8 @@ const cardData = [
         mainText: "58.200",
         percentage: "-48%",
         icon: "Y"
-    }
+    },
+    
 
 ];
 
