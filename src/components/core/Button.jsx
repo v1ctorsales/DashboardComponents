@@ -2,7 +2,7 @@ import React from "react";
 
 import '../../styles/components-styles/Button.css'
 
-function Button({ btnLink, btnType, btnWidth }) {
+function Button({ btnLink, btnType, btnWidth, btnName, btnBS }) {
 
     const buttonTypes = {
         1: "bg-gradient-primary",
@@ -13,11 +13,11 @@ function Button({ btnLink, btnType, btnWidth }) {
     };
 
     const buttonClass = buttonTypes[btnType] || "bg-gradient-primary";
-    const widthClass = btnWidth ? `w-${btnWidth}` : 100;
+    const widthClass = btnWidth ? btnWidth : 100;
 
     return (
-        <a href={btnLink} className={`btn ${buttonClass} w-${widthClass}`}>
-            Botão
+        <a href={btnLink} className={`btn ${buttonClass} w-${widthClass} ${btnBS}`}>
+            {btnName}
         </a>
     );
 }
