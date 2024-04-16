@@ -20,7 +20,7 @@ return(
             <div className="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4 align-items-center">
 
                 <ul className=" ms-md-auto navbar-nav  justify-content-end">
-                    <li className="nav-item d-flex align-items-center"> <Button btnType={5} btnName={'Botao'} btnWidth={100} btnBS={'mb-0 mr-2'}></Button></li>
+                    <li className="nav-item d-flex align-items-center"> <Button btnType={5} btnName={'Botao'}  btnBS={'w-100 mb-0 mr-2'}></Button></li>
                     <li className="nav-item d-flex align-items-center">
                         <a href="/" className="nav-link text-body font-weight-bold px-0">
                         <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
