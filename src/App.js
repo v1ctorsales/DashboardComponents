@@ -1,18 +1,20 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Container from 'react-bootstrap/Container';
-import SideBar from './components/structure/SideBar';
-import NavBar from './components/structure/NavBar';
+import Layout from './pages/Layout.jsx';
+import SignIn from './pages/SignIn.jsx';
+
+//import SignIn from './pages/SignIn';
 
 function App() {
-
     return (
         <div className="App">
-            <Container>
-
-            </Container>
-            <SideBar></SideBar>
-            <main className='main-content position-relative max-height-vh-100 h-100 border-radius-lg ps ps--active-y'><NavBar></NavBar></main>
-            
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/home" component={Layout} />
+                    <Route path="/signin" component={SignIn} />
+                </Switch>
+            </BrowserRouter>
         </div>
     );
 }
